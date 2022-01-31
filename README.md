@@ -14,7 +14,7 @@ docker build -t luizimcpi/booksapp .
 
 ### test app docker local
 ```
-docker run -p 8080:8080 --rm luizimcpi/booksapp
+docker run -p 8080:8009 luizimcpi/booksapp
 
 in a browser
 http://localhost:8080/books

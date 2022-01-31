@@ -13,5 +13,7 @@ ARG JAR_FILE=target/books-fargate-api-0.0.1-SNAPSHOT.jar
 # Add the application's jar to the container
 ADD ${JAR_FILE} app.jar
 
+# EXPOSE 8009
+
 # Run the jar file
-ENTRYPOINT ["java","-jar","-Dspring.profiles.active=local","/app.jar"]
+ENTRYPOINT ["java","-jar","-Dspring.profiles.active=dev","/app.jar"]
